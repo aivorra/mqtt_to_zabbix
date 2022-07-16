@@ -1,0 +1,3 @@
+# Encriptar archivos con datos sensibles
+*.pass filter=git-crypt diff=git-crypt
+*.user filter=git-crypt diff=git-crypt
