@@ -1,6 +1,6 @@
 # mqtt_to_zabbix
 
-Send mqtt data to zabbix server
+Get TTN data by mqtt protocol and send the information to zabbix server.
 
 ## Information
 
