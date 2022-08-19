@@ -30,4 +30,4 @@ do
   echo "Sending package to Zabbix server...";
   /usr/bin/zabbix_sender -z "$zabbix_server" -p "$zabbix_port" -s "$zabbix_host" -k "$zabbix_itemkey" -o "$payload"
 
-  done
+done
