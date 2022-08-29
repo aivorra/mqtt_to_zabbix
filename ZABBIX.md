@@ -41,7 +41,7 @@ sudo -u postgres createdb -O zabbix zabbix
 zcat /usr/share/doc/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix 
 ```
 
-### Configurar DDBB para servidor Zabbix
+### Configure DDBB to Zabbix Server
 Editar archivo /etc/zabbix/zabbix_server.conf
 ```bash
 nano /etc/zabbix/zabbix_server.conf
@@ -51,7 +51,14 @@ nano /etc/zabbix/zabbix_server.conf
 + DBPassword=[postgresql zabbix]
 ```
 
-## Configuración Web
+### Install Zabbix sender
+```bash
+apt-get install zabbix-sender
+```
+
+## Web configuration
+
+### Basic settings
 
 1. Default language = English
 2. Check of pre-requisites > Next stop
@@ -64,16 +71,16 @@ nano /etc/zabbix/zabbix_server.conf
 5. Pre-installation summary > Next step
 6. Install > Finish
 
-## Ingresar a Zabbix
+### Ingresar a Zabbix
 
 * User: Admin
 * Pass: zabbix
 
-## Cambiar contraseña de 'Admin'
+## Change password for 'Admin' user
 
 User settings > Profile > User > Password > Change password
 
-## Importar template
+## Import template
 
 Como usuadio Admin:
 1. Configuration > Templates > Import
